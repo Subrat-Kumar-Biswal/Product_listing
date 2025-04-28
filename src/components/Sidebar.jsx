@@ -41,18 +41,18 @@ function Sidebar({
   return (
     <>
       {/* Hamburger for mobile */}
-      <div className="p-4 lg:hidden">
+      <div className="p-4 lg:hidden z-50 ">
         <button
-          className="text-xl font-bold cursor-pointer"
+          className="text-xl font-bold cursor-pointer relative left-0 top-0"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
-          ☰ Filters
+          ☰ 
         </button>
       </div>
 
       {/* Sidebar */}
       <div
-        className={`fixed top-0 left-0 h-full w-64 bg-white shadow-lg z-0 transform ${
+        className={`fixed top-15 left-0 h-full w-44 bg-white shadow-lg z-0 transform ${
           isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 lg:relative lg:translate-x-0`}
       >
