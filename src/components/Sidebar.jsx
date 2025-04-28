@@ -52,7 +52,7 @@ function Sidebar({
 
       {/* Sidebar */}
       <div
-        className={`fixed top-15 left-0 h-full w-44 bg-white shadow-lg z-0 transform ${
+        className={`fixed top-15 left-0 h-full w-40 bg-white shadow-lg z-0 transform ${
           isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 lg:relative lg:translate-x-0`}
       >

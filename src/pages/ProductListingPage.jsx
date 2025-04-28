@@ -85,7 +85,7 @@ function ProductListingPage() {
       />
 
       {/* Products */}
-      <div className="flex-1 p-8 ml-10 lg:ml-0">
+      <div className="flex-1 p-8 ml-28 lg:ml-0">
         <div className="flex justify-between items-center mb-6">
           <h1 className="text-2xl font-bold">Discover Our Products</h1>
 
