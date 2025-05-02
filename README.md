@@ -1,3 +1,4 @@
+# OPEN IN BRAVE BROWSER IT WORKS PROPERLY 
 # 1 first you have sign up and login then you open the product page
 
 

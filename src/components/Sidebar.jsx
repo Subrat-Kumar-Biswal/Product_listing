@@ -41,18 +41,18 @@ function Sidebar({
   return (
     <>
       {/* Hamburger for mobile */}
-      <div className="p-4 lg:hidden z-50 ">
+      <div className="p-4 lg:hidden">
         <button
-          className="text-xl font-bold cursor-pointer relative left-0 top-0"
+          className="text-xl font-bold cursor-pointer"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
-          ☰ 
+          ☰ Filters
         </button>
       </div>
 
       {/* Sidebar */}
       <div
-        className={`fixed top-15 left-0 h-full w-40 bg-white shadow-lg z-0 transform ${
+        className={`absolute top-10 left-0 h-full w-47 bg-white shadow-lg z-0 transform ${
           isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 lg:relative lg:translate-x-0`}
       >
@@ -60,7 +60,8 @@ function Sidebar({
           {/* Hide Button for Mobile */}
           <div className="flex justify-end lg:hidden">
             <button
-              className="text-sm text-gray-500 hover:underline"
+              className="text-sm text-gray-500 hover:underline cursor-pointer"
+            
               onClick={resetFilters}
             >
               Hide Filters
@@ -68,6 +69,9 @@ function Sidebar({
           </div>
 
           <h2 className="text-xl font-bold mb-6">Filters</h2>
+
+          {/* Customizable */}
+          
 
           {/* Ideal For */}
           <div className="mb-6">

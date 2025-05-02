@@ -85,7 +85,7 @@ function ProductListingPage() {
       />
 
       {/* Products */}
-      <div className="flex-1 p-8 ml-28 lg:ml-0">
+      <div className="flex-1 ml-20 p-8 sm:ml-20 lg:ml-0 md:ml-15">
         <div className="flex justify-between items-center mb-6">
           <h1 className="text-2xl font-bold">Discover Our Products</h1>
 
@@ -101,7 +101,7 @@ function ProductListingPage() {
           </select>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 ">
           {filteredProducts.map((product) => (
             <div key={product.id} className="w-full border rounded p-4">
               <img
