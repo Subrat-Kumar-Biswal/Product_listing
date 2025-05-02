@@ -52,13 +52,13 @@ function Sidebar({
 
       {/* Sidebar */}
       <div
-        className={`absolute top-10 left-0 h-full w-47 bg-white shadow-lg z-0 transform ${
+        className={`absolute  top-15 md:top-15 lg:top-5 h-full w-45 bg-white shadow-lg z-0 transform ${
           isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 lg:relative lg:translate-x-0`}
       >
         <div className="p-6 overflow-y-auto">
           {/* Hide Button for Mobile */}
-          <div className="flex justify-end lg:hidden">
+          <div className="flex justify-end lg:mt-0">
             <button
               className="text-sm text-gray-500 hover:underline cursor-pointer"
             
